@@ -31,7 +31,19 @@
 					<li><a href="#alliance">Alliance</a></li>
 					<li><a href="#press">Press</a></li>
 				</ul>
-				<a class="btnAppLink" href="#" target="_blank">Whitepaper <img src="./images/iconDown.png" alt="icon" /></a>
+				<div class="boxDownload">
+					<div class="titDownload">WHITE PAPER</div>
+					<div class="download_filebox">
+						<div class="download_lang">한국어</div>
+						<a href="#" target="_blank" class="btnDownload">download</a>
+						<div class="listDownload">
+							<ul>
+								<li><a href="#1">한국어</a></li>
+								<li><a href="#2">ENGLISH</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 		<!-- //header -->
@@ -239,7 +251,7 @@
 				</div>
 				<div class="swiper-container" data-aos="fade">
 			    <div class="swiper-wrapper">
-			      <div class="swiper-slide">
+			    	<div class="swiper-slide">
 			      	<div class="top">
 			      		<div class="name">아주경제</div>
 			      		<div class="date">2021.01.05</div>
@@ -491,7 +503,19 @@
 						<h6>Contact US</h6>
 						<p>HCT프로젝트는 Digital Asset Financial System과 함께<br />다음세대의 디지털금융을 만들어 갑니다.</p>
 					</div>
-					<a href="#" class="btnAppLink">WHITE PAPER<br />DOWNLOAD<img src="./images/iconDownBig.png" alt="icon" /></a>
+					<div class="boxDownload">
+						<div class="titDownload">WHITE PAPER<br />DOWNLOAD</div>
+						<div class="download_filebox">
+							<div class="download_lang">한국어</div>
+							<a href="#" target="_blank" class="btnDownload">download</a>
+							<div class="listDownload">
+								<ul>
+									<li><a href="#1">한국어</a></li>
+									<li><a href="#2">ENGLISH</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -550,6 +574,26 @@
 		var news_idx = $("#press .swiper-pagination-bullet").length;
 		var news_idx_w = 500 / news_idx;
 		$("#press .swiper-pagination-bullet").css("width", news_idx_w+"px");
+
+		$(".boxDownload .download_lang").click(function(){
+			var _parent = $(this).parent();
+			if(_parent.hasClass("active")){
+				_parent.removeClass("active");
+			}else{
+				_parent.addClass("active");
+			}
+		});
+
+		$(".boxDownload .listDownload li a").click(function(e){
+			e.preventDefault();
+
+			var target = $(this).attr("href");
+			var lang = $(this).html();
+			
+			$(this).parents(".download_filebox").find(".btnDownload").attr("href", target);
+			$(this).parents(".download_filebox").find(".download_lang").html(lang);
+			$(this).parents(".download_filebox").removeClass("active");
+		});
 	});
 
 	$(window).scroll(function(){
