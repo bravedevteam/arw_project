@@ -27,22 +27,16 @@
 				</h1>
 				<ul class="gnb">
 					<li><a href="#mintable">Framework</a></li>
-					<li><a href="#business">Arcitecture</a></li>
+					<li><a href="#business">Architecture</a></li>
 					<li><a href="#alliance">Alliance</a></li>
 					<li><a href="#press">Press</a></li>
 				</ul>
 				<div class="boxDownload">
 					<div class="titDownload">WHITE PAPER</div>
-					<div class="download_filebox">
-						<div class="download_lang">한국어</div>
-						<a href="#" target="_blank" class="btnDownload">download</a>
-						<div class="listDownload">
-							<ul>
-								<li><a href="#1">한국어</a></li>
-								<li><a href="#2">ENGLISH</a></li>
-							</ul>
-						</div>
-					</div>
+					<ul class="listDownload">
+						<li><a href="#" target="_blank">한글</a></li>
+						<li><a href="#" target="_blank">영문</a></li>
+					</ul>
 				</div>
 			</div>
 		</header>
@@ -85,7 +79,7 @@
 					<div class="boxMission" data-aos="fade-up">
 						<div class="top">
 							<div class="title">HCT<br />PLATFORM</div>
-							<div class="subject">디지털 자산발행<br />플랫폼 DAP</div>
+							<div class="subject">디지털 자산발행<br />플랫폼 DAFS</div>
 						</div>
 						<ul class="listMission">
 							<li>
@@ -505,16 +499,10 @@
 					</div>
 					<div class="boxDownload">
 						<div class="titDownload">WHITE PAPER<br />DOWNLOAD</div>
-						<div class="download_filebox">
-							<div class="download_lang">한국어</div>
-							<a href="#" target="_blank" class="btnDownload">download</a>
-							<div class="listDownload">
-								<ul>
-									<li><a href="#1">한국어</a></li>
-									<li><a href="#2">ENGLISH</a></li>
-								</ul>
-							</div>
-						</div>
+						<ul class="listDownload">
+							<li><a href="#" target="_blank">한글</a></li>
+							<li><a href="#" target="_blank">영문</a></li>
+						</ul>
 					</div>
 				</div>
 			</section>
@@ -574,26 +562,6 @@
 		var news_idx = $("#press .swiper-pagination-bullet").length;
 		var news_idx_w = 500 / news_idx;
 		$("#press .swiper-pagination-bullet").css("width", news_idx_w+"px");
-
-		$(".boxDownload .download_lang").click(function(){
-			var _parent = $(this).parent();
-			if(_parent.hasClass("active")){
-				_parent.removeClass("active");
-			}else{
-				_parent.addClass("active");
-			}
-		});
-
-		$(".boxDownload .listDownload li a").click(function(e){
-			e.preventDefault();
-
-			var target = $(this).attr("href");
-			var lang = $(this).html();
-			
-			$(this).parents(".download_filebox").find(".btnDownload").attr("href", target);
-			$(this).parents(".download_filebox").find(".download_lang").html(lang);
-			$(this).parents(".download_filebox").removeClass("active");
-		});
 	});
 
 	$(window).scroll(function(){
