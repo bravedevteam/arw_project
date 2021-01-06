@@ -32,20 +32,14 @@ select::-ms-expand {display: none;}
 
 
 /* Download */
-.boxDownload { position:absolute; right:70px; top:16px; z-index:2; }
+.boxDownload { position:absolute; right:70px; top:25px; z-index:2; }
 .boxDownload:after { content:''; clear:both; display:block; }
-.boxDownload .titDownload { height:50px; float:left; color:#313131; font-size:20px; letter-spacing:-.025em; line-height:50px; }
-.boxDownload .download_filebox { width:190px; height:50px; float:left; margin-left:15px; position:relative; }
-.boxDownload .download_filebox:after { content:''; clear:both; display:block; }
-.boxDownload .download_filebox .download_lang { width:140px; height:50px; float:left; position:relative; background:#fff; padding:0 15px; border:1px solid #313131; font-size:15px; line-height:50px; cursor:pointer; transition:all .2s ease-out; }
-.boxDownload .download_filebox.active .download_lang { height:100px; }
-.boxDownload .download_filebox .download_lang:after { content:''; width:14px; height:8px; position:absolute; right:11px; top:21px; background:url('../images/iconArrow.png') center center no-repeat; transition:all .2s ease-out; z-index:2; }
-.boxDownload .download_filebox.active .download_lang:after { transform:rotate(180deg); }
-.boxDownload .download_filebox .listDownload { width:138px; height:0; position:absolute; left:1px; top:1px; background:#fff; transition:all .2s ease-out; overflow:hidden; z-index:1; }
-.boxDownload .download_filebox.active .listDownload { height:98px;}
-.boxDownload .download_filebox .listDownload li { line-height:50px; }
-.boxDownload .download_filebox .listDownload li a { padding:0 15px; display:block; font-size:15px; }
-.boxDownload .download_filebox .btnDownload { width:50px; height:50px; float:left; background:url('../images/iconDown.png') center center no-repeat #313131; font-size:0; text-indent:-9999px; }
+.boxDownload .titDownload { height:34px; float:left; position:relative; padding-right:21px; line-height:34px; font-weight:700; font-size:20px; letter-spacing:-.025em; }
+.boxDownload .titDownload:after { content:''; width:13px; height:14px; position:absolute; right:0; top:9px; background:url('../images/iconDown.png') no-repeat; }
+.boxDownload .listDownload { margin-left:11px; float:left; overflow:hidden; }
+.boxDownload .listDownload li { float:left; }
+.boxDownload .listDownload li+li { margin-left:5px; }
+.boxDownload .listDownload li a { width:68px; height:34px; display:block; border-radius:16px; background:#313131; line-height:34px; text-align:center; color:#fff; font-size:15px; }
 
 
 /* Header */
@@ -104,7 +98,7 @@ select::-ms-expand {display: none;}
 #mission .boxMission { text-align:center; }
 #mission .boxMission .top { width:254px; height:254px; padding-top:68px; margin:0 auto; border-radius:50%; background:#4f0dc8; }
 #mission .boxMission .top .title { margin-bottom:15px; font-size:25px; font-weight:700; line-height:30px; color:#fff; }
-#mission .boxMission .top .subject { font-size:16px; font-family:"Noto Sans KR"; line-height:22px; color:#fff; }
+#mission .boxMission .top .subject { font-size:16px; font-family:"Noto Sans KR"; line-height:22px; color:#fff; font-weight:300; }
 #mission .boxMission ul { padding-top:88px; background:url('../images/bgMission.png') center top no-repeat; }
 #mission .boxMission ul li { width:236px; display:inline-block; vertical-align:middle; font-size:16px; }
 #mission .boxMission ul li .item { width:190px; height:190px; padding-top:54px; margin:0 auto 15px; background:#fff; border:5px solid #eaeef2; border-radius:50%; }
@@ -157,11 +151,11 @@ select::-ms-expand {display: none;}
 #useflow .secTitle .subject { margin-bottom:15px; font-family:"Poppins"; font-weight:600; }
 
 /* section_alliance */
-#alliance { height:688px; padding-top:122px; background:url('../images/bgAlliance.png') center 58px no-repeat #f4f6f8; text-align:center; }
+#alliance { height:688px; padding-top:120px; background:url('../images/bgAlliance.png') center 58px no-repeat #f4f6f8; text-align:center; }
 #alliance .secTitle { margin-bottom:75px; }
 
 /* section_service alliance */
-#service { height:866px; padding-top:100px; text-align:center; }
+#service { height:926px; padding-top:100px; text-align:center; }
 #service .secTitle { margin-bottom:85px;  }
 
 /* section_press */
@@ -188,12 +182,14 @@ select::-ms-expand {display: none;}
 #contact h6 { font-size:35px; letter-spacing:-.025em; font-weight:700; color:#fff; }
 #contact p { font-size:20px; letter-spacing:-.025em; line-height:1.5; color:#fff; }
 #contact .boxDownload { width:833px; height:334px; padding:82px 0 0 140px; margin-left:127px; position:absolute; left:50%; top:0; border-top-left-radius:167px; border-bottom-left-radius:167px; background:#4f0dc8; }
-#contact .boxDownload .titDownload { height:auto; float:none; margin-bottom:26px; color:#2bcbda; font-weight:700; font-size:40px; letter-spacing:-.025em; line-height:43px; }
-#contact .boxDownload .download_filebox { width:250px; margin-left:0; float:none; }
-#contact .boxDownload .download_filebox .download_lang { width:200px; border:0; }
-#contact .boxDownload .download_filebox .btnDownload { background-color:#2bcbda; }
-#contact .boxDownload .download_filebox .listDownload { width:200px; left:0; top:0; }
-
+#contact .boxDownload .titDownload { height:auto; float:none; margin-bottom:20px; color:#2bcbda; font-size:40px; letter-spacing:-.025em; line-height:43px; }
+#contact .boxDownload .listDownload { float:none; margin:0; }
+#contact .boxDownload .listDownload li { position:relative; }
+#contact .boxDownload .listDownload li+li { margin:0; }
+#contact .boxDownload .listDownload li+li:after { content:''; width:1px; height:14px; position:absolute; left:0; top:50%; margin-top:-7px; background:#722eee; }
+#contact .boxDownload .listDownload li a { width:auto; height:38px; padding:0 18px; line-height:38px; background:none; }
+#contact .boxDownload .listDownload li a:after { content:''; width:13px; height:14px; display:inline-block; margin-left:5px; background:url('../images/iconDownMint.png') no-repeat; }
+#contact .boxDownload .listDownload li:first-child a { padding-left:0;}
 
 /* Footer */
 #footer { height:90px; text-align:center; font-size:18px; }
