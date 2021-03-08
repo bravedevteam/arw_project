@@ -47,7 +47,7 @@ select::-ms-expand {display: none;}
 #header .header { max-width:1900px; margin:0 auto; position:relative; }
 #header .header:after { content:''; clear:both; display:block; }
 
-#header .logo { width:152px; height:36px; margin:26px 0 0 70px; float:left; background:url('../images/logo.png'); font-size:0; text-indent:-99999px; }
+#header .logo { width:162px; height:36px; margin:26px 0 0 70px; float:left; background:url('../images/logo.png'); font-size:0; text-indent:-99999px; }
 #header .gnb { position:absolute; right:496px; top:26px; overflow:hidden; }
 #header .gnb li { float:left; }
 #header .gnb li+li { margin-left:50px; }
@@ -87,23 +87,15 @@ select::-ms-expand {display: none;}
 #visual .boxFramework ul li .title { margin-bottom:20px; font-size:40px; color:#fff; }
 #visual .boxFramework ul li .subject { font-size:20px; line-height:28px; color:#fff; }
 
-/* section_mission */
-#mission { padding-top:100px; margin-bottom:180px; }
-#mission .secTitle { margin-bottom:70px; }
-#mission .secTitle:after { content:''; clear:both; display:block; }
-#mission .secTitle h3 { margin-bottom:10px; }
-#mission .secTitle .subject { width:600px; float:left; }
-#mission .secTitle p { float:left; }
+/* section_project_description */
+#projectDis { padding:100px 0 610px; margin-bottom:180px; background:url('../images/imgProjectDescription.png') center bottom no-repeat; }
+#projectDis .secTitle { margin-bottom:70px; }
+#projectDis .secTitle:after { content:''; clear:both; display:block; }
+#projectDis .secTitle h3 { margin-bottom:100px; text-align:center; }
+#projectDis .secTitle .subject { width:600px; float:left; }
+#projectDis .secTitle .subject span { font-size:30px; font-weight:200; }
+#projectDis .secTitle p { float:left; }
 
-#mission .boxMission { text-align:center; }
-#mission .boxMission .top { width:254px; height:254px; padding-top:68px; margin:0 auto; border-radius:50%; background:#4f0dc8; }
-#mission .boxMission .top .title { margin-bottom:15px; font-size:25px; font-weight:700; line-height:30px; color:#fff; }
-#mission .boxMission .top .subject { font-size:16px; font-family:"Noto Sans KR"; line-height:22px; color:#fff; font-weight:300; }
-#mission .boxMission ul { padding-top:88px; background:url('../images/bgMission.png') center top no-repeat; }
-#mission .boxMission ul li { width:236px; display:inline-block; vertical-align:middle; font-size:16px; }
-#mission .boxMission ul li .item { width:190px; height:190px; padding-top:54px; margin:0 auto 15px; background:#fff; border:5px solid #eaeef2; border-radius:50%; }
-#mission .boxMission ul li .item .title { margin-bottom:12px; font-weight:700; font-size:18px; }
-#mission .boxMission ul li .item .subject { line-height:21px; font-size:18px; }
 
 /* section_mintable */
 #mintable { height:876px; position:relative; }
@@ -145,21 +137,17 @@ select::-ms-expand {display: none;}
 #business .secTitle p { margin-left:600px; }
 
 /* section_useflow */
-#useflow { height:1352px; padding-top:100px; text-align:center; }
-#useflow .secTitle { margin-bottom:60px; }
+#useflow { padding:160px 0; text-align:center; }
 #useflow .secTitle h3 { margin-bottom:6px; }
-#useflow .secTitle .subject { margin-bottom:15px; font-family:"Poppins"; font-weight:600; }
+#useflow .secTitle .subject { margin-bottom:80px; font-family:"Poppins"; font-weight:600; }
+#useflow .img img { max-width:1232px; margin-left:-32px; }
 
 /* section_alliance */
-#alliance { height:688px; padding-top:120px; background:url('../images/bgAlliance.png') center 58px no-repeat #f4f6f8; text-align:center; }
-#alliance .secTitle { margin-bottom:75px; }
-
-/* section_service alliance */
-#service { height:926px; padding-top:100px; text-align:center; }
-#service .secTitle { margin-bottom:85px;  }
+#alliance { height:724px; padding-top:120px; background:url('../images/bgAlliance.png') center 65px no-repeat #f4f6f8; text-align:center; }
+#alliance .secTitle { margin-bottom:125px; }
 
 /* section_press */
-#press { height:775px; padding-top:95px; background:#f4f6f8; text-align:center; }
+#press { height:850px; padding-top:180px; text-align:center; }
 #press .secTitle { margin-bottom:40px; }
 #press .swiper-container { overflow:visible; }
 #press .swiper-slide { width:375px; height:375px; position:relative; padding:40px 30px 0 25px; background:#fff; }
