@@ -74,10 +74,10 @@ select::-ms-expand {display: none;}
 
 /* section_visaul */
 #visual { position:relative; padding-top:85px; background:url('../images/bgVisual.png') center center no-repeat; }
-#visual .boxVisual { padding-top:156px; margin-bottom:180px; text-align:center; }
+#visual .boxVisual { padding-top:156px; margin-bottom:80px; text-align:center; }
 #visual .boxVisual h2 { margin-bottom:30px; font-size:70px; line-height:75px; }
 #visual .boxVisual h2 span { font-size:53px; }
-#visual .boxVisual p { font-size:30px; line-height:45px; font-family:"Noto Sans KR";}
+#visual .boxVisual p { margin-bottom:32px; font-size:30px; line-height:45px; font-family:"Noto Sans KR";}
 #visual .boxFramework { height:806px; padding-top:126px; background:#4f0dc8; border-top-left-radius:100px; border-top-right-radius:100px; text-align:center; }
 #visual .boxFramework h4 { font-size:60px; font-weight:700; color:#fff; line-height:55px; }
 #visual .boxFramework p { display:block; margin-bottom:60px; font-size:40px; font-weight:500; color:#fff; }
@@ -177,6 +177,14 @@ select::-ms-expand {display: none;}
 #contact .boxDownload .listDownload li:first-child a { padding-left:0;}
 
 /* Footer */
-#footer { height:148px; background:#6b6b6b; text-align:center; font-size:18px; }
-#footer .copyright { padding-top:46px; }
-#footer .copyright p { color:rgba(244,246,248,.5); }
+#footer { height:148px; padding-top:26px; background:#6b6b6b; font-size:18px; }
+#footer .copyright { width:1200px; margin:0 auto; overflow:hidden; }
+#footer .copyright p { float:left; color:rgba(244,246,248,.5); }
+#footer .copyright .btn { float:right; }
+#footer .copyright .btn a+a { margin-left:6px; }
+
+
+.btn a { width:200px; height:52px; display:inline-block; background-repeat:no-repeat; background-position:11px center; line-height:52px; vertical-align:middle; font-size:17px; font-weight:700; text-align:left; }
+.btn a+a { margin-left:64px; }
+.btnLinkMedium { padding-left:56px; background-image:url('../images/iconMedium.png'); background-color:#292a2c; color:#fff; }
+.btnLinkKakao { padding-left:52px; background-image:url('../images/iconKakao.png'); background-color:#fae300; color:#000; }
