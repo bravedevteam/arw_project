@@ -47,23 +47,16 @@
 				<a href="https://open.kakao.com/o/gkqgVr1c" target="_blank" class="btnLinkKakao">카카오톡 바로가기</a>
 				</div>
 			</div>
-			<div class="boxFramework" data-aos="fade-up">
-				<h4>ARW Framework</h4>
-				<p>R-DAP (Reliable-Digital Asset Platform)</p>
-				<ul class="listAssetSystem">
-					<li>
-						<div class="title">Smart<br />Adoptability</div>
-						<div class="subject">효율적 디지털 자산 관리</div>
-					</li>
-					<li>
-						<div class="title">Secure<br />Trading</div>
-						<div class="subject">빠르고 안전한 거래</div>
-					</li>
-					<li>
-						<div class="title">Easy<br />Usability</div>
-						<div class="subject">쉬운 디지털 신상품 제공</div>
-					</li>
-				</ul>
+			
+			<div class="boxFramework">
+				<div class="swiper-container" data-aos="fade">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="./images/imgFramework1.jpeg" alt="" /></div>
+						<div class="swiper-slide"><img src="./images/imgFramework2.jpeg" alt="" /></div>
+					</div>
+					<!-- Add Scrollbar -->
+					<div class="swiper-pagination"></div>
+				</div>
 			</div>
 		</section>
 
@@ -455,7 +448,18 @@
 		duration: 1000,
 	});
 
-	var swiper = new Swiper('.swiper-container', {
+	var swiper = new Swiper('.boxFramework .swiper-container', {
+		loop: true,
+		slidesPerView: 'auto',
+		spaceBetween: 0,
+		centeredSlides: true,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+	});
+
+	var swiper = new Swiper('#press .swiper-container', {
 		loop: true,
 		slidesPerView: 'auto',
 		spaceBetween: 36,

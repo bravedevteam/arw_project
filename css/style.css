@@ -78,15 +78,12 @@ select::-ms-expand {display: none;}
 #visual .boxVisual h2 { margin-bottom:30px; font-size:70px; line-height:75px; }
 #visual .boxVisual h2 span { font-size:53px; }
 #visual .boxVisual p { margin-bottom:32px; font-size:30px; line-height:45px; font-family:"Noto Sans KR";}
-#visual .boxFramework { height:806px; padding-top:126px; background:#4f0dc8; border-top-left-radius:100px; border-top-right-radius:100px; text-align:center; }
-#visual .boxFramework h4 { font-size:60px; font-weight:700; color:#fff; line-height:55px; }
-#visual .boxFramework p { display:block; margin-bottom:60px; font-size:40px; font-weight:500; color:#fff; }
-#visual .boxFramework p strong { font-weight:600; color:#fff; }
-#visual .boxFramework ul { padding-top:265px; background:url('../images/bgFramework.png') center top no-repeat; }
-#visual .boxFramework ul li { width:300px; display:inline-block; vertical-align:middle; }
-#visual .boxFramework ul li+li { margin-left:150px; }
-#visual .boxFramework ul li .title { margin-bottom:16px; font-size:40px; color:#fff; line-height:48px; }
-#visual .boxFramework ul li .subject { font-size:20px; line-height:28px; color:#fff; }
+#visual .boxFramework {  }
+#visual .boxFramework img { max-width:100%; }
+#visual .boxFramework .swiper-container { overflow:visible; }
+#visual .boxFramework .swiper-pagination-bullet-active { background:#775528; }
+#visual .boxFramework .swiper-container-horizontal>.swiper-pagination-bullets,
+#visual .boxFramework .swiper-pagination-custom, .swiper-pagination-fraction { bottom:-25px; }
 
 /* section_project_description */
 #projectDis { padding:100px 0 696px; margin-bottom:76px; background:url('../images/imgProjectDescription.png') center bottom no-repeat; }
