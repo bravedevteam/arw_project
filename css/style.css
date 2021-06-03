@@ -81,10 +81,6 @@ select::-ms-expand {display: none;}
 #visual .boxFramework { text-align:center; }
 #visual .boxFramework h4 { padding:40px 0; font-size:60px; font-weight:700; line-height:55px; }
 #visual .boxFramework img { max-width:100%; }
-#visual .boxFramework .swiper-container { overflow:visible; }
-#visual .boxFramework .swiper-pagination-bullet-active { background:#775528; }
-#visual .boxFramework .swiper-container-horizontal>.swiper-pagination-bullets,
-#visual .boxFramework .swiper-pagination-custom, .swiper-pagination-fraction { bottom:-25px; }
 
 /* section_project_description */
 #projectDis { padding:100px 0 696px; margin-bottom:76px; background:url('../images/imgProjectDescription.png') center bottom no-repeat; }
