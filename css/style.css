@@ -81,8 +81,8 @@ select::-ms-expand {display: none;}
 
 
 /* section_visaul */
-#visual { position:relative; padding-top:85px; background:url('../images/bgVisual.png') center center no-repeat; }
-#visual .boxVisual { padding-top:156px; margin-bottom:80px; text-align:center; }
+#visual { position:relative; padding-top:85px; background:url('../images/bgVisual.png') center 0 no-repeat; }
+#visual .boxVisual { padding-top:156px; padding-bottom:80px; text-align:center; }
 #visual .boxVisual h2 { margin-bottom:30px; font-size:70px; line-height:75px; }
 #visual .boxVisual h2 span { font-size:53px; }
 #visual .boxVisual p { margin-bottom:32px; font-size:30px; line-height:45px; font-family:"Noto Sans KR";}

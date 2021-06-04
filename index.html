@@ -59,7 +59,7 @@
 				</div>
 			</div>
 			
-			<div class="boxFramework" data-aos="fade">
+			<div class="boxFramework langType kor" data-aos="fade">
 				<h4 class="title">Arowana Gold Jewelry Platform Ecosystem</h4>
 				<div class="cont"><img src="./images/imgFramework.jpg" alt="" /></div>
 			</div>
@@ -529,6 +529,8 @@
 				$(this).parent().removeClass("active");
 				$(this).parent().prepend(target);
 				$(this).addClass("selected").siblings().removeClass("selected");
+
+				AOS.refresh();
 			}else{
 				$(this).parent().addClass("active");
 			}
