@@ -196,3 +196,4 @@ select::-ms-expand {display: none;}
 .btn a.btnAndroid { width:410px; height:70px; display:block; padding:0; margin:12px auto 0; text-align:center; line-height:70px; background:#101112; color:#fff; }
 .btn a.btnAndroid:before { content:''; width:24px; height:26px; margin-right:8px; display:inline-block; background:url('../images/iconAndroid.png') center center no-repeat; vertical-align:middle; }
 .btn a.btnAndroid span { color:#bba14f; }
+.btn .imp { margin-top:20px; font-size:17px; color:#CD2626; font-weight:700; }
