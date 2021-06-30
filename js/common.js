@@ -1,10 +1,15 @@
 $(document).ready(function(){
-	// 헤더 스크롤 이벤트
-	// window.onscroll = function(){
-	// 	if($(document).scrollTop() > 1){
-	// 		$("#header").addClass("scroll");
-	// 	}else{
-	// 		$("#header").removeClass("scroll");
-	// 	}
- //    }
+	/* Dim */
+	$("#dim").click(function(){
+		dim_close();
+	});
+	function dim_open(){
+		$("body").css("overflow", "hidden");
+		$("#dim").fadeIn(500);
+	}
+	function dim_close(){
+		$("body").css("overflow", "auto");
+		$(".basicPopup").removeClass("active");
+		$("#dim").fadeOut(500);
+	}
 });
