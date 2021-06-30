@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	$(".basicPopup .close").click(function(){
+		dim_close();
+	});
+
 	/* Dim */
 	$("#dim").click(function(){
 		dim_close();
