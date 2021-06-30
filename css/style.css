@@ -190,6 +190,9 @@ select::-ms-expand {display: none;}
 
 
 .btn a { width:200px; height:52px; padding-right:16px; display:inline-block; background-repeat:no-repeat; background-position:11px center; line-height:52px; vertical-align:middle; font-size:17px; font-weight:700; font-family:"Noto Sans KR"; }
-.btn a+a { margin-left:64px; }
+.btn a+a { margin-left:5px; }
 .btnLinkMedium { padding-left:56px; background-image:url('../images/iconMedium.png'); background-color:#292a2c; color:#fff; }
 .btnLinkKakao { padding-left:52px; background-image:url('../images/iconKakao.png'); background-color:#fae300; color:#000; }
+.btn a.btnAndroid { width:410px; height:70px; display:block; padding:0; margin:12px auto 0; text-align:center; line-height:70px; background:#101112; color:#fff; }
+.btn a.btnAndroid:before { content:''; width:24px; height:26px; margin-right:8px; display:inline-block; background:url('../images/iconAndroid.png') center center no-repeat; vertical-align:middle; }
+.btn a.btnAndroid span { color:#bba14f; }
